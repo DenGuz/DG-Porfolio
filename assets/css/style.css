@@ -14,22 +14,200 @@ body {
     background-color: #20485c;
     display: flex;
     justify-content: space-between;
+    z-index: 9999;
 }
 .name {
     font-family:Helvetica,Arial, sans-serif;
     background-color: #40a6aa;
     color: #20485c;
-}
+}  
+
 header nav ul {
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
     align-items:center;
     list-style: none;
-   }
+} 
+   
 header nav ul li a {
-    margin:0 30px;
+    padding:25px 20px;
     font-weight: lighter;
     font-size: 1.55vw;   
     color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    
 } 
+header nav ul li a:hover {
+     background:#40a6aa ;
+     font-size: 1.75vw;
+}
+.image {
+    width: 35%;
+    border-radius: 25px;
+    flex: 1 12%;
+
+}
+
+.about-me {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.about-me-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 50%;
+    font-size: 22px;
+    padding-left: 50px;
+    border-left: 3px solid rgb(9, 115, 156);
+}
+
+.work-section {
+    padding-bottom: 50px;
+    width: 80%;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.flex-column {
+    width: 25%;
+    border-right: 3px solid rgb(207, 136, 29);
+}
+
+
+.project-info {
+    bottom: 50px;
+    position:absolute;
+    padding: 10px;
+    color: #20485;
+}
+.project{
+    bottom:50px;
+    position: absolute;
+    padding: 10px;
+    color: #20485c;
+}
+.flex-row {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    flex: 1;
+    font-size: 28px;
+}
+.title {
+    font-size: 42px;
+    text-align: right;
+    padding-right: 30px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 20px;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer ul li{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .work-section {
+        width: 100%;
+    }
+
+    .flex-column {
+        width: 100%;
+        border:none;
+    }
+
+    .cards {
+        margin: 0 auto;
+    }
+
+    footer ul li {
+        justify-content: center;
+    }
+
+    .about-me h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        border: none;
+        width: 100%;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .cards {
+        justify-content: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer ul li{
+        justify-content: center;
+    }
+}
