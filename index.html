@@ -3,106 +3,98 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DG Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>My Portfolio</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1>
-            <a class="name"> Dennis Guzman </a>
-        </h1>
-
-        <!-- clickable navigation -->
+    <header>
+        <h1>Dennis Guzman</h1>
         <nav>
             <ul>
                 <li>
-                    <a href=#about-me>About me</a>
+                    <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href=#work>Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href=#contact-me>Contact Me</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
                 <li>
-                    <a href=#resume>Resume</a>
+                    <a href="#resume">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- The start of the page -->
-    <section id="about-me" class="about-me" >
-        <h2 class="title" class="flex-colum">About me </h2>
-        <div class="about-me-content">
-            <div class="about-me-img">
-                <img src="assets/images/me.jpg">
-            </div>
-            <div class="about-me-text">
-                <p> I'm currently a escalation engineer working at a Qognify, currently attempting to improve my
-                    technical
-                    skills by learning some code.
-                </p>
-            </div>
-        </div>
 
+    <section id="about-me" class="about-me">
+        <h2 class="title">
+            About  Me
+        </h2>
+        <div class="about">
+            <div class="about-me-img">
+               <img src="assets/images/me.jpg">
+            </div>
+            <p>
+                I'm currently a escalation engineer working at a Qognify, currently attempting to improve my
+                technical
+                skills by learning some code.
+            </p>
+        </div>
     </section>
-    <section>
-        <div class=work-section class="flex-colum">
+
+    <section id="work" class="work-section">
+        <div class="flex-column">
             <h2 class="title">Work</h2>
         </div>
-        <!-- Images for the projects -->
-        <div class="flex-row">
-            <img src="assets/images/RunBuddy.JPG" class="image">
-            <label class="project">Run Buddy</label>
-        </div>
-        <div class="flex-row">
-            <div>
-                <img src="assets/images/social-media-marketing.jpg" class="image">
-                <div class=project-info>
-                    <label class="project">Surf report</label>
+        <div class="cards">
+            <div class="surf-report">
+                <div class=report-info1>
+                    <h3>Surf Report</h3>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="led-wall">
+                    <div class="report-info1">
+                        <h3>LED Wall</h3>
+                    </div>
+                </div>
+                <div class="calculator">
+                    <div class="report-info1">
+                        <h3>Calculator</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="pastel">
+                    <div class="report-info1">
+                        <h3>Pastel Puzzles</h3>
+                    </div>
+                </div>
+                <div class="run">
+                    <div class="report-info1">
+                        <h3>Run Buddy</h3>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="flex-row">
-            <div>
-                <img src="assets/images/digital-marketing-meeting.jpg" class="image">
-            </div>
-            <div class=project-info>
-                <label class="project">LED Wall</label>
-            </div>
-        </div>
-        <div class="flex-row">
-            <div>
-                <img src="assets/images/search-engine-optimization.jpg" class="image">
-            </div>
-            <div class=project-info>
-                <label class="project">Calculator</label>
-            </div>
-        </div>
-        <div class="flex-row">
-            <div>
-                <img src="assets/images/social-media-marketing.jpg" class="image">
-            </div>
-            <div class=project-info>    
-                <label class="project">Pastels Puzzels</label>
-            </div>    
-        </div>
     </section>
-    <!-- contact me info -->
 
     <footer id="contact-me">
-        <h2 class="title" class="flex-colum">Contact <br> Me</h2>
+        <h2 class="title">Contact Me</h2>
         <ul>
             <li>
                 <p>201.638.7136</p>
             </li>
             <li>
-                <p>d.guzman021@gmail.com</p>
+                <p>dguzman021@gmail.com</p>
             </li>
-        </ul>
+        <ul>
+            
     </footer>
-
 </body>
 
 </html>
